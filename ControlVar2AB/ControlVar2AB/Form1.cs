@@ -11,7 +11,7 @@ namespace ControlVar2AB
         public Form1()
         {
             InitializeComponent();
-
+      
             var countryFilePath = "countries.txt";
             countries = File.ReadLines(countryFilePath)
                 .Select(line => line.Split(','))
@@ -30,9 +30,15 @@ namespace ControlVar2AB
                 })
                 .ToList();
 
-            // Заполняем комбобокс значениями полей, по которым можно сгруппировать данные
-            cmbGroupBy.Items.Add("AccommodationType");
-            cmbGroupBy.Items.Add("CountryName");
+           
+            cmbGroupBy.Items.Add("AccommodationType"); // сортировка по инд
+          
+            cmbGroupBy.Items.Add("Price"); // сортировка по цене
+      
+
+
+
+
 
         }
 
@@ -78,6 +84,13 @@ namespace ControlVar2AB
                 Price = a.Price
             }).OrderBy(x => x.AccommodationId); // Сортировка по идентификатору путевки
 
+            // Дополнительная сортировка по цене и количеству
+            if (groupBy == "Price")
+            {
+                formattedResult = formattedResult.OrderBy(x => x.Price);
+            }
+          
+
             dataGridViewResult.DataSource = formattedResult.ToList();
         }
 
@@ -93,10 +106,52 @@ namespace ControlVar2AB
 
         }
 
+        private void DeleteSelectedRecord()
+        {
+            if (dataGridViewResult.SelectedRows.Count > 0)
+            {
+                DataGridViewRow selectedRow = dataGridViewResult.SelectedRows[0];
+                int accommodationId = Convert.ToInt32(selectedRow.Cells["AccommodationId"].Value);
+
+                Accommodation accommodationToDelete = accommodations.FirstOrDefault(a => a.Id == accommodationId);
+                if (accommodationToDelete != null)
+                {
+                    accommodations.Remove(accommodationToDelete);
+                    RefreshDataGridView();
+                }
+            }
+        }
+
+        private void RefreshDataGridView()
+        {
+            string groupBy = cmbGroupBy.SelectedItem.ToString();
+
+            var formattedResult = result.SelectMany<dynamic, dynamic, dynamic>(grp => grp.Accommodations, (grp, a) => new
+            {
+                AccommodationId = a.Id,
+                HotelName = a.Name,
+                Country = countries.FirstOrDefault(c => c.Id == a.Id)?.Name,
+                Count = grp.Count,
+                Price = a.Price
+            }).OrderBy(x => x.AccommodationId);
+
+            if (groupBy == "Price")
+            {
+                formattedResult = formattedResult.OrderBy(x => x.Price);
+            }
+
+            dataGridViewResult.DataSource = formattedResult.ToList();
+        }
+
+
+
+
         private void buttonDelet_Click(object sender, EventArgs e)
         {
+            DeleteSelectedRecord();
 
         }
+
     }
 
     public class Country
