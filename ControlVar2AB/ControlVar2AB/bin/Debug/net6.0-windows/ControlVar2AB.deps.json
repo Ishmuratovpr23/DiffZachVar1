@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "ControlVar2AB/1.0.0": {
+        "runtime": {
+          "ControlVar2AB.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ControlVar2AB/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

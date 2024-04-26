@@ -1,0 +1,3 @@
+Hotel,1,Hotel California,100.00
+Hostel,2,Hostel Paradise,50.00
+Apartment,3,Apartment Dream,200.00

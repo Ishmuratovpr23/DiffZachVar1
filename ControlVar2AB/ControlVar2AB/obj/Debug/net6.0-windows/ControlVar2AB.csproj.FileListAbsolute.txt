@@ -1,0 +1,16 @@
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\bin\Debug\net6.0-windows\ControlVar2AB.exe
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\bin\Debug\net6.0-windows\ControlVar2AB.deps.json
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\bin\Debug\net6.0-windows\ControlVar2AB.runtimeconfig.json
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\bin\Debug\net6.0-windows\ControlVar2AB.dll
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\bin\Debug\net6.0-windows\ControlVar2AB.pdb
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\obj\Debug\net6.0-windows\ControlVar2AB.Form1.resources
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\obj\Debug\net6.0-windows\ControlVar2AB.csproj.GenerateResource.cache
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\obj\Debug\net6.0-windows\ControlVar2AB.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\obj\Debug\net6.0-windows\ControlVar2AB.AssemblyInfoInputs.cache
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\obj\Debug\net6.0-windows\ControlVar2AB.AssemblyInfo.cs
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\obj\Debug\net6.0-windows\ControlVar2AB.csproj.CoreCompileInputs.cache
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\obj\Debug\net6.0-windows\ControlVar2AB.dll
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\obj\Debug\net6.0-windows\refint\ControlVar2AB.dll
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\obj\Debug\net6.0-windows\ControlVar2AB.pdb
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\obj\Debug\net6.0-windows\ControlVar2AB.genruntimeconfig.cache
+C:\Users\Slava\Desktop\Долги\ControlVar2AB\ControlVar2AB\obj\Debug\net6.0-windows\ref\ControlVar2AB.dll
